@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+
+.padding {
+    text-align-last: center;
+    border: 1px solid black;
+    margin: 40px;
+    padding: 20px;
+}   
+
+
+p {
+	margin: 20px 0;
+}
+
+
+input[type=submit], button, input[type=text] {
+	border-radius: 5px;
+	padding: 10px;
+	outline: none;
+}
+
+
+input[type=submit], button {
+	background: #01A1CB;
+	color: #FFF;
+	border: 0;
+}
+
+
+input[type=text] {
+	border: 1px solid #D3D3D3;
+	background: #F9F9F9;
+}
