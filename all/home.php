@@ -1,5 +1,15 @@
 <? top('Пополнить номера') ?>
 
+<SCRIPT>
+var newline=null
+function populate(textareaObject){
+   if (navigator.appVersion.lastIndexOf('Win') != -1)
+      newline="\r\n"
+      else newline="\n"
+   textareaObject.value="line 1" + newline + "line 2" + newline 
+   + "line 3"
+}
+</SCRIPT>
 
 <div class="padding">
 	<form action="/form" method="post">
@@ -8,8 +18,13 @@
         <option value="24899391">Мегафон</option>
         <option value="95877310">Теле2</option>
         </select>
-		<p><input type="text" name="phone" placeholder="Номер телефона"></p>
-		<p><input type="submit" name="enter" value="Пополнить"></p>
+		
+<textarea name="phone">+79961946401
++79961946402
++79961946403
+</textarea>
+
+	<p><input type="submit" name="enter" value="Пополнить"></p>
 	</form>
 </div>
 
